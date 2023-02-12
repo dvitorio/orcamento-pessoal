@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Orçamento pessoal</title>
+     <!--CSS BOOTSTRAP-->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+          integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+     <!--EXTERNAL CSS-->
+     <link rel="stylesheet" href="/css/index.css">
+</head>
+
+<body>
+
+     <div class="my-5 generalContainer container mx-auto shadow">
+          <h1 class="text-center text-info p-3"><b>Controle de receitas e despesas</b></h1>
+          <div class="row">
+               <div class="col-xl-3">
+                    <label class="form-label text-secondary" for="dateRegister">Data</label>
+                    <input class="bg-light form-control" type="date" id="dateRegister">
+               </div>
+               <div class="col-xl-3">
+                    <label class="form-label text-secondary" for="flowType">Fluxo do registro</label>
+                    <select class="bg-light form-control" name="" id="flowType">
+                         <option value="" disabled selected></option>
+                         <option value="despesa" id="despesa">Despesa</option>
+                         <option value="receita" id="receita">Receita</option>
+                    </select>
+               </div>
+               <div class="col-xl-3">
+                    <label class="form-label text-secondary" for="registerType">Tipo</label>
+                    <select class="bg-light form-control" name="" id="registerType">
+                         <option value="" disabled selected></option>
+                         <option value="water" id="water">Água</option>
+                         <option value="food" id="food">Alimentação</option>
+                         <option value="fuel" id="fuel">Combustível</option>
+                         <option value="education" id="education">Educação</option>
+                         <option value="energy" id="energy">Energia</option>
+                         <option value="internet" id="internet">Internet</option>
+                         <option value="fun" id="fun">Lazer</option>
+                         <option value="health" id="health">Saúde</option>
+                         <option value="clothes" id="clothes">Vestuário</option>
+                    </select>
+               </div>
+               <div class="col-xl-3">
+                    <label class="form-label text-secondary" for="registerValue">Valor (R$)</label>
+                    <input class="bg-light form-control" type="number" id="registerValue">
+               </div>
+          </div>
+          <button class="btn btn-primary my-3" id="btnRegister">Registrar</button>
+     </div>
+
+     <!--BOOTSTRAP & SCRIPTS JAVASCRIPT-->
+     <script src="/js/index.js" defer></script>
+</body>
+
+</html>
