@@ -18,6 +18,22 @@ body{
      width: 100vw;
 }
 
+.display{
+     align-items: center;
+     border-radius: 8px;
+     color: grey;
+     display: flex;
+     height: 10rem;
+     justify-content: center;
+}
+
+#displayResult{
+     width: 15rem;
+     font-size: 2.5rem;
+}
+
+
+
 
 
 
